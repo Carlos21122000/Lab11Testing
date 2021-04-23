@@ -1,0 +1,13 @@
+  
+.ClearButton {
+  align-items: center;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 45px;
+  height: 85px;
+  justify-content: center;
+  width: 85px;
+  transition: filter 0.3s ease-in;
+  }

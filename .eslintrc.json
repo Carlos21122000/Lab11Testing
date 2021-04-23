@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        //"plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "no-extra-semi":"error",//regla punto y coma
+        "no-unexpected-multiline":"warn",
+        "semi":["error","always"], //regla punto y coma
+        "@typescript-eslint/quotes":["error", "single"],
+        "no-console": ["error"],
+        "no-unused-vars": ["error"],
+        "windows": "\r\n",
+        "prettier/prettier": "error",
+        "no-obj-calls": "warn"
+    }
+}
