@@ -4,7 +4,7 @@
 / Bryce Ayres. (agosto 2018) react-calculator-app
 */
 import React from "react";
-import "./Button.css";
+
 
 const isOperator = (val) => !isNaN(val) || val === "." || val === "=";
 

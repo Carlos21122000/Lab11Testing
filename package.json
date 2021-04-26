@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@testing-library/user-event": "^13.1.5",
+    "enzyme-adapter-react-16": "^1.15.6",
     "font-awesome": "^4.7.0",
     "lodash.shuffle": "^4.2.0",
     "mathjs": "^9.3.2",
@@ -30,6 +31,7 @@
     "babel-loader": "^8.2.2",
     "babel-preset-latest": "^6.24.1",
     "css-loader": "^5.2.0",
+    "enzyme": "^3.11.0",
     "eslint": "^7.0.0-rc.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-node": "^4.1.0",

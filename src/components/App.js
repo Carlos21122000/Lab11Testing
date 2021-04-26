@@ -5,7 +5,6 @@
 
 
 import React, {Component} from "react";
-import "./App.css";
 import Button from './Elements/Button';
 import Input from './Elements/Input';
 import ClearButton from './Elements/ClearButton';
@@ -46,69 +45,69 @@ class App extends Component {
           <div className="container">
             <FinalMessage/>
               <div className="row1">
-                <ClearButton handleClear={() => this.setState({ input: "",PrimerIngreso:"",SegundoIngreso:"",SimboloMat:"",result:"" })}>
+                <ClearButton test="clear" handleClear={() => this.setState({ input: "",PrimerIngreso:"",SegundoIngreso:"",SimboloMat:"",result:"" })}>
                   AC
                 </ClearButton>
-                <Button ingresar={()=>this.setState({input:math.evaluate("-1 * " + this.state.input).toString().substring(0,8)})}>
+                <Button test="signo" ingresar={()=>this.setState({input:math.evaluate("-1 * " + this.state.input).toString().substring(0,8)})}>
                   +/-
                 </Button>
-                <Button ingresar={()=>this.setState({SimboloMat: "%",PrimerIngreso:this.state.input /100})}>
+                <Button test="mod" ingresar={()=>this.setState({SimboloMat: "%",PrimerIngreso:this.state.input /100})}>
                   %
                 </Button>
-                <Button ingresar={()=>this.setState({SimboloMat: "/",PrimerIngreso:this.state.input,input: "", Donee:false})}>
+                <Button test="div" ingresar={()=>this.setState({SimboloMat: "/",PrimerIngreso:this.state.input,input: "", Donee:false})}>
                   /
                 </Button>
               </div>
                <div className="row2">
-                  <Button ingresar={()=>this.setState({input: this.state.input + 7, Donee:false})}>
+                  <Button test="7" ingresar={()=>this.setState({input: this.state.input + 7, Donee:false})}>
                     7
                   </Button>
-                  <Button ingresar={()=>this.setState({input: this.state.input + 8, Donee:false})}>
+                  <Button test="8"ingresar={()=>this.setState({input: this.state.input + 8, Donee:false})}>
                     8
                   </Button>
-                  <Button ingresar={()=>this.setState({input: this.state.input + 9, Donee:false})}>
+                  <Button test="9"ingresar={()=>this.setState({input: this.state.input + 9, Donee:false})}>
                     9
                   </Button>
-                  <Button ingresar={()=>this.setState({SimboloMat: "*",PrimerIngreso:this.state.input,input: "", Donee:false})}>
+                  <Button test="*"ingresar={()=>this.setState({SimboloMat: "*",PrimerIngreso:this.state.input,input: "", Donee:false})}>
                     x
                   </Button>
                 </div>
                 <div className="row3">
-                  <Button ingresar={()=>this.setState({input: this.state.input + 4, Donee:false})}>
+                  <Button test="4" ingresar={()=>this.setState({input: this.state.input + 4, Donee:false})}>
                     4
                   </Button>
-                  <Button ingresar={()=>this.setState({input: this.state.input + 5, Donee:false})}>
+                  <Button test="5" ingresar={()=>this.setState({input: this.state.input + 5, Donee:false})}>
                     5
                   </Button>
-                  <Button ingresar={()=>this.setState({input: this.state.input + 6, Donee:false})}>
+                  <Button test="6" ingresar={()=>this.setState({input: this.state.input + 6, Donee:false})}>
                     6
                   </Button>
-                  <Button ingresar={()=>this.setState({SimboloMat: "-",PrimerIngreso:this.state.input,input: "",Donee:false})}>
+                  <Button test="menos" ingresar={()=>this.setState({SimboloMat: "-",PrimerIngreso:this.state.input,input: "",Donee:false})}>
                     -
                   </Button>
                 </div>
                 <div className="row4">
-                  <Button ingresar={()=>this.setState({input: this.state.input + 1, Donee:false})}>
+                  <Button test="1" ingresar={()=>this.setState({input: this.state.input + 1, Donee:false})}>
                     1
                   </Button>
-                  <Button ingresar={()=>this.setState({input: this.state.input + 2, Donee:false})}>
+                  <Button test="2" ingresar={()=>this.setState({input: this.state.input + 2, Donee:false})}>
                     2
                   </Button>
-                  <Button ingresar={()=>this.setState({input: this.state.input + 3, Donee:false})}>
+                  <Button test="3" ingresar={()=>this.setState({input: this.state.input + 3, Donee:false})}>
                     3
                   </Button>
-                  <Button ingresar={()=>this.setState({SimboloMat: "+",PrimerIngreso:this.state.input,input: "", Donee:false})}>
+                  <Button test="mas" ingresar={()=>this.setState({SimboloMat: "+",PrimerIngreso:this.state.input,input: "", Donee:false})}>
                     +
                   </Button>
                 </div>
                 <div className="row5">
-                  <Button ingresar={()=>this.setState({input: this.state.input + '.', Donee:false})}>
+                  <Button test="punto" ingresar={()=>this.setState({input: this.state.input + '.', Donee:false})}>
                     .
                   </Button>
-                  <Button ingresar={()=>this.setState({input: this.state.input + 0, Donee:false})}>
+                  <Button test="0" ingresar={()=>this.setState({input: this.state.input + 0, Donee:false})}>
                     0
                   </Button>
-                  <Button ingresar={()=>this.setState({
+                  <Button test="igual" ingresar={()=>this.setState({
                     input: math.evaluate(this.state.PrimerIngreso+this.state.SimboloMat+this.state.input).toString().substring(0,9),Donee: true,})}>
                     =
                   </Button>            
