@@ -22,11 +22,6 @@ it("renders without crashing", () => {
     ReactDOM.render(<App></App>, div)
 })
 
-describe('App', () => {
-  it('should be defined', () => {
-    expect(App).toBeDefined();
-  });
- });
 
 describe("Test App", () => {
     it("Suma",()=>{
